@@ -59,8 +59,8 @@ public class ApplicationController {
 	}
 
 	
-	@DeleteMapping(value="/ApplicationI/{Id}")
-	public int deleteApplicationById(@PathVariable("Id")int applicationId) {
+	@DeleteMapping(value="/ApplicationI/{applicationId}")
+	public int deleteApplicationById(@PathVariable("applicationId")int applicationId) {
 		return applicationServiceImplementation.deleteApplicationById(applicationId);
 	}
 	
@@ -72,7 +72,7 @@ public class ApplicationController {
 	public Application getApplicationById(@PathVariable("Id")int applicationId) {
 		return applicationServiceImplementation.getApplicationById(applicationId);
 	}
-	@PostMapping(value="/ApplicationU")
+	@PostMapping(value="/ApplicationUpdate")
 	public int updateApplicationStatus(@RequestBody Application app) {
 		return applicationServiceImplementation.updateApplicationStatus(app);
 	}
