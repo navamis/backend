@@ -25,12 +25,12 @@ public class Address {
     private String landmark;
 	
     
-    public Address( String district, String state, String city, String country, long zipcode,
+    public Address( String district, String states, String city, String country, long zipcode,
 			String landmark) {
 		super();
 		
 		this.district = district;
-		this.states = state;
+		this.states = states;
 		this.city = city;
 		this.country = country;
 		this.zipcode = zipcode;
@@ -63,13 +63,13 @@ public class Address {
 	}
 
 
-	public String getState() {
+	public String getStates() {
 		return states;
 	}
 
 
-	public void setState(String state) {
-		this.states = state;
+	public void setStates(String states) {
+		this.states = states;
 	}
 
 

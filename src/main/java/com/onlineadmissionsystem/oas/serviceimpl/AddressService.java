@@ -64,7 +64,7 @@ public class AddressService implements IAddressService{
 		        	
 		        add1=address.get();
 		       add1.setCity(add.getCity());
-		       add1.setState(add.getState());
+		       add1.setStates(add.getStates());
 		       add1.setZipcode(add.getZipcode());
 		       
 		         
